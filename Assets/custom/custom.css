@@ -1,0 +1,321 @@
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    background: linear-gradient(90deg, #1f1f24, #270247);
+    color: floralwhite;
+}
+
+header 
+{
+    width: 100%;
+    padding: 10px; 
+}
+
+.srcfilm
+{
+    display: flex;
+}
+
+.srcfilm input 
+{
+   height: 30px;
+   border: 2px solid white;
+   background-color: transparent;
+   border-radius: 10px;
+   outline: none;
+   color: white;
+   
+}
+
+input::placeholder 
+{
+   padding: 10px;
+   color: #979797;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+  
+}
+
+.btnSrc 
+{
+    background-color: transparent;
+    border: none;
+    padding-left: 10px;
+}
+
+.btnSrc img 
+{
+    height: 30px;
+}
+
+.btnSrc :hover img 
+{
+    transform: scale(1.2);
+    transition: 0.5s ease;
+}
+
+
+.contents 
+{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+.txtcat 
+{
+    color: white;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10%;
+}
+
+.divisor 
+{
+    border: 1px solid white;
+    padding-top: 0px;
+    margin-top: 50px;
+    margin-left: 10%;
+    width: 10%;
+}
+
+.categoria select 
+{
+    padding: 8px;
+    width: 100%;
+    max-width: 150px;
+    font-size: 16px; 
+    border: 2px none;
+    border-radius: 20px;
+}
+
+.texto1
+{
+    margin-left: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    padding-top: 17px;
+}
+
+.texto1 a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+.texto1 a :hover 
+{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    color: white;
+}
+
+.categoria select
+{
+    outline: none;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+}
+
+.categoria select option 
+{
+    padding: 8px;
+    font-size: 16px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+   
+    
+}
+
+.categoria select option:checked 
+{
+    background-color: rgb(4, 102, 182);
+    color: white;
+
+}
+
+.texto1 
+{
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+
+.icon img 
+{
+    height: 40px;
+}
+
+.icon 
+{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+#btnRemov img 
+{
+    height: 40px;
+    cursor: pointer;
+    padding-left: 130em;
+}
+
+.avtr 
+{
+    height: 440px;
+}
+.esl 
+{
+    height: 442px;
+    width: 300px;
+}
+
+.itl 
+{
+    height: 442px;
+    
+}
+
+.thw 
+{
+    height: 442px;
+}
+
+.trz 
+{
+    height: 442px;
+    width: 300px;
+}
+
+.wrapper 
+{
+    padding: 10px 10%;
+}
+
+#card-area 
+{
+    padding: 50px 0;
+    
+}
+
+.box-area 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.box 
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 300px; 
+    margin: auto; 
+}
+
+.box img 
+{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.overlay 
+{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent,#1c1c1c 58%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: heigth 0.5s;
+}
+
+.overlay h3 
+{
+   font-weight: 500;
+   margin-bottom: 5px;
+   margin-top: 80%;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 30px;
+   letter-spacing: 2px;
+}
+
+.overlay p 
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boxL:hover .avtr, .esl
+{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay 
+{
+    height: 100%;
+    transition: 1.5s ease;
+}
+
+.notification 
+{
+    position: fixed;
+    top: 28px;
+    right: 9px;
+    background-image: linear-gradient(to right, #3b0157 0%,#1d1d1d 100%);
+    box-shadow: 2px 2px 9px #000000,
+    -2px -2px 9px #111111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    animation: slideDown 0.5s ease forwards;
+    opacity: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 15px;
+}
+
+@keyframes slideDown 
+{
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+    100% {
+        top: 28px;
+        opacity: 1;
+    }
+}
+
+.box video 
+{
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%; 
+  }
