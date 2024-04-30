@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streaming</title>
+  <link rel="stylesheet" href="custom/custom.css">
+  <script src="/Assets/scripts/scripts.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="contents">
+      <div class="texto1">
+        <a href="index.html"><h1>UCB Streaming</h1></a>
+      </div>
+      <div class="srcfilm">
+        <input type="text" id="searchInput" placeholder="Buscar">
+        <button class="btnSrc" id="searchButton"><a href=""><img src="images/search (1).png" alt=""></a></button>
+      </div>
+      <div class="categoria">
+        <select name="" id="selectCategoria">
+          <option value="">Categorias</option>
+          <option value="Ação">Ação</option>
+          <option value="romance">Romance</option>
+          <option value="drama">Drama</option>
+          <option value="aventura">Aventura</option>
+          <option value="Ficção Científica">Ficção Científica</option>
+          <option value="Comédia">Comédia</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      
+      <div id="card-area">
+      <div class="txtcat">Catálogo</div>
+        <div class="divisor"></div>
+        <div class="wrapper">
+          <div class="box-area">
+
+            <div class="box" data-categori="Aventura">
+              <video id="movieVideo1" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="avtr" src="images/avatar.jpg" alt="">
+              <div class="overlay">
+                <h3>avatar</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon" id="btnView" ><img src="images/play-button.png"></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Ficção Científica">
+              <video id="movieVideo2" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="esl" src="images/eusoualenda.webp" alt="">
+              <div class="overlay">
+                <h3>Eu sou a Lenda</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon" id="btnView"><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Ação">
+              <video id="movieVideo3" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="trz" src="images/300x.jpg" alt="">
+              <div class="overlay">
+                <h3>300</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView3" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Drama">
+              <video id="movieVideo4" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="thw" src="images/thwolf.jpg" alt="">
+              <div class="overlay">
+                <h3>O lobo de Wall Street</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Ficção Científica">
+              <video id="movieVideo5" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/111c5c9ad99661af2d80e38948cf29d8.jpg" alt="">
+              <div class="overlay">
+                <h3>Interstellar</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Drama">
+              <video id="movieVideo6" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/a procura da felicidade.jpg" alt="">
+              <div class="overlay">
+                <h3>A procura da felicidade</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Romance">
+              <video id="movieVideo7" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/antesdoamanhecer.jpg" alt="">
+              <div class="overlay">
+                <h3>antes do amanhecer</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Drama">
+              <video id="movieVideo8" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/questaodetempo.jpg" alt="">
+              <div class="overlay">
+                <h3>Questao de Tempo</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Romance">
+              <video id="movieVideo9" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/orgulhopreconceito.jpg" alt="">
+              <div class="overlay">
+                <h3>Orgulho e preconceito</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Ação">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/matrix.jpg" alt="">
+              <div class="overlay">
+                <h3>Matrix</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Aventura">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/Aviajem.jpg" alt="">
+              <div class="overlay">
+                <h3>A viajem de Chihiro</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Aventura">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/carros.jpg" alt="">
+              <div class="overlay">
+                <h3>Carros</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Drama">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta este tipo de video <code>video</code>.
+              </video>
+              <img class="itl" src="images/parasita.jpg" alt="">
+              <div class="overlay">
+                <h3>Parasita</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+            <div class="box" data-categori="Ficção Científica">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/Achegada.jpg" alt="">
+              <div class="overlay">
+                <h3>A chegada</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Ação">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/filhosdaesperanca.jpg" alt="">
+              <div class="overlay">
+                <h3>Filhos da Esperança</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Ação">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/bladerunner.jpg" alt="">
+              <div class="overlay">
+                <h3>Blade Runner 2049</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Romance">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/ela.jpg" alt="">
+              <div class="overlay">
+                <h3>Ela</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Romance">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/embriagados.jpg" alt="">
+              <div class="overlay">
+                <h3>Embriagados de amor</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Comédia">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/borat.jpg" alt="">
+              <div class="overlay">
+                <h3>Borat</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Comédia">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/5050.jpg" alt="">
+              <div class="overlay">
+                <h3>50/50</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+
+            <div class="box" data-categori="Drama">
+              <video id="movieVideo10" style="display: none;" controls>
+                <source src="videos/The most beautiful shots in film history.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento <code>video</code>.
+              </video>
+              <img class="itl" src="images/titans.jpg" alt="">
+              <div class="overlay">
+                <h3>Duelo de Titãs</h3>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+                <button class="icon btnView" id="btnView" ><img src="images/play-button.png" alt=""></button>
+                <button class="icon" id="btnAddFavorit"><img src="images/like.png" alt=""></button>
+                <button class="icon" id="btnAddList"><img src="images/plus.png" alt=""></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="listaArea">
+        <div class="txtcat">Sua Lista</div>
+        <div class="divisor"></div>
+        <div id="btnRemov" style="display: none;"><button class="icon btnRemov"><img src="images/trash.png" alt=""></button></div>
+        <div class="box-area"></div>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
